@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:food_court/core/model/category_model.dart';
 
 class CQJsonParse {
   static Future<List<CQCategoryModel>> getCategoryData() async {
