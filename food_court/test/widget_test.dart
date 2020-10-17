@@ -7,10 +7,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:food_court/core/Services/http_request.dart';
 
 import 'package:food_court/main.dart';
 
 void main() {
+
+  testWidgets("测试网络请求", (WidgetTester tester) async {
+    HttpRequest.request("http://123.207.32.32:8001/api/meal").then((value) {
+        print(value);
+    });
+  });
+
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp());
