@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_court/core/model/category_model.dart';
+import 'package:food_court/ui/pages/meal/meal_content.dart';
 
 class CQMealScreen extends StatelessWidget {
   static const String routeName = "/meal";
@@ -11,7 +12,7 @@ class CQMealScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(category.title),
       ),
-      body: Container(),
+      body: CQMealContent(),
     );
   }
 }

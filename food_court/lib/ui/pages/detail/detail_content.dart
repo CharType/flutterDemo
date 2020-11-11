@@ -37,6 +37,7 @@ class CQDetailContent extends StatelessWidget {
             padding: EdgeInsets.zero,
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
+            itemCount: _meal.ingredients.length,
             itemBuilder: (ctx, index) {
               return Card(
                 color: Theme.of(context).accentColor,

@@ -17,7 +17,7 @@ class CQHomeCategoryItem extends StatelessWidget {
           color: bgColor,
           borderRadius: BorderRadius.circular(12.px),
           gradient: LinearGradient(
-            colors: [
+              colors: [
               bgColor.withOpacity(.5),
               bgColor
             ]
